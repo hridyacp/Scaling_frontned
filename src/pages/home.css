@@ -20,3 +20,6 @@ model-viewer {
     font-weight: 900;
     font-size: large;
 }
+.css-3f6ufr-MuiGrid-root>.MuiGrid-item{
+padding-top:26px !important;
+}

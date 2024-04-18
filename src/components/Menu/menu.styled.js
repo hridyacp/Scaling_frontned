@@ -4,16 +4,16 @@ export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: white;
-  transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
-  height: 100vh;
+  background: rgb(255,255,255);
+  transform: ${({ open }) => open ? 'translateX(-100%)' : 'translateX(0)'};
+ height:100vh;
   text-align: left;
   padding: 2rem;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0; 
+  right: -22.5vw; 
   transition: transform 0.3s ease-in-out;
-
+  
   a {
     font-size: 2rem;
     text-transform: uppercase;

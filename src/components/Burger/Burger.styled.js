@@ -12,6 +12,8 @@ export const StyledBurger = styled.button`
   cursor: pointer;
   padding: 0;
   z-index: 10;
+  padding-left: ${({ open }) => open ? '60px' : '0px'};
+
 
   span {
     width: 2rem;
@@ -20,19 +22,18 @@ export const StyledBurger = styled.button`
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
-    transform-origin: 1px;
+    transform-origin: 1px; 
+  }
+  .span1 {
+    transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
+  }
 
-    :first-child {
-      transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
-    }
+  .span2 {
+    opacity: ${({ open }) => open ? '0' : '1'};
+    transform: ${({ open }) => open ? 'translateX(20px)' : 'translateX(0)'};
+  }
 
-    :nth-child(2) {
-      opacity: ${({ open }) => open ? '0' : '1'};
-      transform: ${({ open }) => open ? 'translateX(20px)' : 'translateX(0)'};
-    }
-
-    :nth-child(3) {
-      transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
-    }
+  .span3 {
+    transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
   }
 `;

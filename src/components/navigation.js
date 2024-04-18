@@ -59,7 +59,7 @@ const connectWallet=async()=>{
     },[])
    
   return (
-    <div className="sticky">
+    <div className="sticky pt-4">
       <Grid container  alignContent={"center"} justifyContent={"center"} alignItems={"center"}>
       <Grid item xs={0.5} >
      

@@ -1,9 +1,5 @@
 .main-container{
-    background: url("../Assets/bg.jpg") no-repeat center;
-    background-size: cover;
-    height:100vh;
-    position: sticky;
-    overflow-y: auto;
+  
 }
 model-viewer {
     cursor: grab;

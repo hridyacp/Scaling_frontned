@@ -59,21 +59,8 @@ const connectWallet=async()=>{
     },[])
    
   return (
-    <div className="sticky pt-4">
-      <Grid container  alignContent={"center"} justifyContent={"center"} alignItems={"center"}>
-      <Grid item xs={0.5} >
-     
-      </Grid>
-        <Grid item xs={1.5}  alignContent={"center"} justifyContent={"center"} alignItems={"center"}>
-      <div className="text-cont">
-        <img width="210px" height="130px" src={ghoLogo} alt="ghologo" />
-      </div>
-      </Grid>
-      <Grid item xs={7}>
-      
-      </Grid>
-      <Grid container item xs={3}  alignContent={"center"} justifyContent={"center"} alignItems={"center"}>
-     <Grid container item xs={12} alignContent={"start"} justifyContent={"center"} alignItems={"center"}>
+    <div className="sticky p-0 flex justify-between">
+        <img width="150px" height="20px" src={ghoLogo} alt="ghologo" />
        {/* {!open &&
         <div>
            <button onClick={()=>setOpen((prev)=>!prev)}>
@@ -84,23 +71,19 @@ const connectWallet=async()=>{
         {open &&
           <Menu opne={open} setOpen={(open)=>setOpen(open)}/>
         } */}
-         <div ref={node}>
+         {/* <div ref={node}>
         <FocusLock disabled={!open}>
             <Burger open={open} setOpen={setOpen}  />
             <Menu open={open} setOpen={setOpen}  />
           </FocusLock>
-          </div>
+          </div> */}
     {/* {!isConnected?
   <button className="button-connect" style={{"&:hover": { color: 'black',backgroundColor:"#4E9282"},}} onClick={connectWallet}>CONNECT WALLET</button>
   : <><Grid item xs={2} alignContent={"center"} justifyContent={"center"} alignItems={"center"}>
   <img width="55px" height="55px" src={user} alt="user" style={{opacity:"1"}} />
   </Grid>
   </>} */}
-  </Grid>
-  
-  <Grid item xs={3}></Grid>
-  </Grid>
-  </Grid>
+ 
   </div>
   )
 }

@@ -11,30 +11,39 @@ function Home(){
 
     return(
 <>
-<Grid container className="main-container" spacing={7}>
-    <Grid item xs={12} style={{position:"sticky"}}>
+<div container className="flex flex-col justify-between gap-0">
+    {/* <Grid item xs={12} className="sticky"> */}
 <Navigation account={account} setIsConnected={(isConnected)=>setIsConnected(isConnected)} isConnected={isConnected}/>
-</Grid>
+{/* </Grid>
 <Grid item container xs={12} className="pt-6">
-<Grid item xs={5.5} alignItems={"center"} justifyContent={"center"} alignContent={"center"}>
-<div className="text-white text-6xl font-bold text-left flex justify-end pb-8">
+<Grid item xs={5.5} alignItems={"center"} justifyContent={"center"} alignContent={"center"}> */}
+<div className="flex justify-around pl-4 pr-4 pb-8">
+<div className="text-white text-6xl font-bold text-left flex flex-col justify-start pt-44 ">
     
 Where Trust Gets A  <br /> Digital Passport
 
-</div>
+
 <div className="text-left pl-40 pt-4">
     <button className="bg-zinc400 rounded-md p-2 pl-4 pr-4 text-sm font-bold">Get Started</button>
 </div>
-</Grid>
-<Grid item xs={6.5} style={{height:"650px",width:"350px",display:"flex",justifyContent:"flex-start"}} alignContent={"flex-start"}>
+</div>
+
+{/* </Grid> */}
+{/* <Grid item xs={6.5} style={{height:"850px",width:"450px",display:"flex",justifyContent:"flex-start"}} alignContent={"flex-start"}> */}
+<div style={{ objectFit: "contain",height: "1200px",width:"auto" ,display:"flex",justifyContent:"flex-start",flexDirection:"column"}}>
 <model-viewer
+style={{width:"inherit",width:"450px",paddingBottom:"32rem",display:"flex",justifyContent:"flex-start"}}
+
     src="./astronaut.glb" alt="astronaut"
     camera-orbit="45deg 55deg" touch-action="pan-y" autoplay animation-name="Running"
     >
 </model-viewer>
-</Grid>
-</Grid>
-<Grid item container xs={12}>
+
+</div>
+</div>
+{/* </Grid>
+</Grid> */}
+<Grid container xs={12}>
   <Grid item xs={1}>
 
   </Grid>
@@ -49,12 +58,13 @@ This is an open source project found on github (requires developer experience to
 <Grid item xs={6} alignContent={"center"} justifyContent={"center"}>
   <Cards />
 </Grid>
-</Grid>
-    <Grid item xs={1}>
+</Grid> 
+     <Grid item xs={1}>
 
 </Grid>
 </Grid>
-</Grid>
+{/* </Grid> */}
+</div>
 </>
     )
 }

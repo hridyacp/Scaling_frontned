@@ -1,6 +1,9 @@
 .App {
   text-align: center;
-
+  background: url("./Assets/bg.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: scroll;
 }
 
 .App-logo {

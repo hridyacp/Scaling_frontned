@@ -2,6 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import {  Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
+import Court from './pages/Court/court';
+import Hospital from './pages/Hospital/hospital';
+import CounterFiet from './pages/CounterFiet/counterFiet';
 
 function App() {
   
@@ -9,6 +12,9 @@ function App() {
     <div className="App">
        <Routes>
     <Route path="/" element={ <Home  />} />
+    <Route path="/court-page" element={ <Court  />} />
+    <Route path="/hospital-page" element={ <Hospital  />} />
+    <Route path="/counterFiet-page" element={ <CounterFiet  />} />
  </Routes>
     </div>
   );

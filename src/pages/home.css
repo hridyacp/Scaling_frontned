@@ -1,0 +1,22 @@
+.main-container{
+    background: url("../Assets/bg.jpg") no-repeat center;
+    background-size: cover;
+    height:100vh;
+    position: sticky;
+    overflow-y: auto;
+}
+model-viewer {
+    cursor: grab;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+  }
+.card-container{
+    background: rgb(249, 233, 233 ,0.2);
+    color: white;
+    font-weight: 900;
+    font-size: large;
+}

@@ -20,7 +20,7 @@ model-viewer {
 padding-top:26px !important;
 }
 figure {
-  width: 350px;
+  width: 500px;
   aspect-ratio: 8 / 5;
   --bg: hsl(330 80% calc(90% - (var(--hover) * 10%)));
   --accent: hsl(280 80% 40%);
@@ -54,7 +54,7 @@ figure:after {
   position: absolute;
   left: 20%;
   top: 15%;
-  width: 40%;
+  width: 50%;
   transform:
     translateX(calc(var(--hover) * -15%))
     scale(calc(1 + (var(--hover) * 0.2)));
@@ -68,6 +68,24 @@ article {
 article:hover {
   --hover: 1;
 }
+h2 {
+  position:absolute;
+  left: 20%;
+  top: 15%;
+  width: 50%;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+  transform:
+    translateX(calc(var(--hover) * -15%))
+    scale(calc(1 + (var(--hover) * 0.2)));
+}
+.article:hover h2 {
+  opacity: 1;
+}
+
 ul {
   margin: 0px;
   padding: 0px;
@@ -234,4 +252,3 @@ color: #ff5e14;
 font-size: 14px;
 color:  #fff;
 }
-

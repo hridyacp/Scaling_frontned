@@ -11,6 +11,7 @@ import callIcon from "../Assets/call.png";
 import gmailIcon from "../Assets/gmail.png";
 import locIcon from "../Assets/location.png";
 import vid from "../Assets/video.mp4";
+import builtBy from "../Assets/builtBy.png";
 
 const { default: Navigation } = require("../components/navigation");
 
@@ -81,9 +82,9 @@ This is an open source project found on github (requires developer experience to
 </Grid>
 </Grid>
 <div className="flex justify-center text-white font-mont text-xl gap-10 mt-10 mb-4">
-    <span className="flex justify-center items-center">Built By</span>
     <article>
-  <figure><img className="built-by" src="https://assets.codepen.io/605876/person.png" alt="" /></figure>
+  
+  <figure> <img className="built-by" src={builtBy} alt="" /><h2>Built By</h2> </figure>
  
 </article>
 

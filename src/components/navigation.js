@@ -1,13 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import ghoLogo from '../Assets/logobg.png';
-import menu from '../Assets/Menu.png';
+import user from '../Assets/profile.png';
 import { Grid } from "@mui/material";
 import Menu from "./Menu";
 import Burger from "./Burger";
 import FocusLock from 'react-focus-lock';
 
 function Navigation({setAccount,setIsConnected,isConnected}) {
-    const [open, setOpen] = useState(false);
     const node = useRef();
 const connectWallet=async()=>{      
     if (window.ethereum) {
@@ -59,30 +58,20 @@ const connectWallet=async()=>{
     },[])
    
   return (
-    <div className="sticky p-0 flex justify-between">
-        <img width="150px" height="20px" src={ghoLogo} alt="ghologo" />
-       {/* {!open &&
-        <div>
-           <button onClick={()=>setOpen((prev)=>!prev)}>
-        <img width="55px" height="55px" src={menu} alt="menu"/>
-        </button>
-       </div>
-       }
-        {open &&
-          <Menu opne={open} setOpen={(open)=>setOpen(open)}/>
-        } */}
+    <div className=" p-0 flex justify-between w-[100%]">
+        <img width="150px" height="20px" className="ml-8" src={ghoLogo} alt="ghologo" />
          {/* <div ref={node}>
         <FocusLock disabled={!open}>
             <Burger open={open} setOpen={setOpen}  />
             <Menu open={open} setOpen={setOpen}  />
           </FocusLock>
           </div> */}
-    {/* {!isConnected?
-  <button className="button-connect" style={{"&:hover": { color: 'black',backgroundColor:"#4E9282"},}} onClick={connectWallet}>CONNECT WALLET</button>
+    {!isConnected?
+  <button className="text-white p-2 mt-2 mr-16 h-[40px] text-lg font-mont font-normal"  onClick={connectWallet}>Connect</button>
   : <><Grid item xs={2} alignContent={"center"} justifyContent={"center"} alignItems={"center"}>
-  <img width="55px" height="55px" src={user} alt="user" style={{opacity:"1"}} />
+  <img width="55px" height="55px" className="mr-16 mt-2" src={user} alt="user" style={{opacity:"1"}} />
   </Grid>
-  </>} */}
+  </>}
  
   </div>
   )

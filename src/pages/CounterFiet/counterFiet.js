@@ -10,6 +10,10 @@ function CounterFiet(){
     const handleInput =(e,type)=>{
 
     }
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+      
     return(
         <div container className="flex flex-col justify-between gap-0">
     {/* <Grid item xs={12} className="sticky"> */}

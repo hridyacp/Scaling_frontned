@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Navigation from "../../components/navigation";
 import "../home.css";
+import signIn from "../../Assets/Sign.png";
 function Court(){
     const [account,setAccount]=useState("");
     const [isConnected,setIsConnected]=useState(false);
@@ -10,6 +11,10 @@ function Court(){
     const handleInput =(e,type)=>{
 
     }
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
     return(
         <div container className="flex flex-col justify-between gap-0">
     {/* <Grid item xs={12} className="sticky"> */}
@@ -31,7 +36,7 @@ function Court(){
               
             </div>
             <div className="btn-container">
-            <button onClick={getSupplyAttest} className="button-create">Sign</button>
+            <button onClick={getSupplyAttest} className="button-create"><img width="150px" height="40px" src={signIn} alt="signIn" /></button>
             </div>
                   
            

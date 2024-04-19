@@ -10,6 +10,7 @@ import LnIcon from "../Assets/ln.png";
 import callIcon from "../Assets/call.png";
 import gmailIcon from "../Assets/gmail.png";
 import locIcon from "../Assets/location.png";
+import vid from "../Assets/video.mp4";
 
 const { default: Navigation } = require("../components/navigation");
 
@@ -18,9 +19,13 @@ function Home(){
     const [isConnected,setIsConnected]=useState(false);
 
     return(
-<>
+<div>
+<video autoPlay loop muted>
+          <source src = {vid} type = 'video/mp4' autoPlay loop/>
+          </video>
+          <div className="absolute">
 <div container className="flex flex-col justify-between gap-2">
- 
+
 <Navigation setAccount={(account)=>setAccount(account)} setIsConnected={(isConnected)=>setIsConnected(isConnected)} isConnected={isConnected}/>
 
 {/* </Grid>
@@ -144,7 +149,7 @@ This is an open source project found on github (requires developer experience to
                 <div className="row">
                     <div className="col-xl-6 col-lg-6 text-center text-lg-left">
                         <div className="copyright-text">
-                            <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+                            <p>Copyright &copy; 2018, All Right Reserved Shravan</p>
                         </div>
                     </div>
                    
@@ -153,7 +158,8 @@ This is an open source project found on github (requires developer experience to
         </div>
     </footer>
 </div>
-</>
+</div>
+</div>
     )
 }
 export default Home;

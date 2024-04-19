@@ -11,7 +11,7 @@ else if(type==="hospital"){
     navigate('/hospital-page');
 }
 else if(type==="counterFiet"){
-    navigate('/counterFiet-page');
+    navigate('/supplyChain-page');
 }
     }
     return(  <div className="flex gap-1 justify-center">

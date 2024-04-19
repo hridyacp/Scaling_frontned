@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import Navigation from "../../components/navigation";
 import "../home.css";
 import signIn from "../../Assets/Sign.png";
+import vid from "../../Assets/video.mp4";
+
 function Court(){
     const [account,setAccount]=useState("");
     const [isConnected,setIsConnected]=useState(false);
@@ -16,7 +18,11 @@ function Court(){
       }, [])
 
     return(
-        <div container className="flex flex-col justify-between gap-0">
+        <div>
+        <video autoPlay loop muted>
+                  <source src = {vid} type = 'video/mp4' autoPlay loop/>
+                  </video>
+                <div container className="flex flex-col justify-between gap-0 absolute w-[100%]">
     {/* <Grid item xs={12} className="sticky"> */}
 <Navigation account={account} setIsConnected={(isConnected)=>setIsConnected(isConnected)} isConnected={isConnected}/>
         <div className="flex justify-around">
@@ -53,6 +59,7 @@ function Court(){
             >
         </model-viewer>
         
+        </div>
         </div>
         </div>
         </div>)

@@ -77,7 +77,7 @@ ul {
 position: relative;
 }
 .footer-cta {
-border-bottom: 1px solid #373636;
+border-bottom: 0.5px solid  #aaa8a8;
 }
 .single-cta img {
 color: #ff5e14;
@@ -96,7 +96,7 @@ font-weight: 600;
 margin-bottom: 2px;
 }
 .cta-text span {
-color: #757575;
+color:  #fff;
 font-size: 15px;
 }
 .footer-content {
@@ -111,6 +111,12 @@ height: 330px;
 background-size: cover;
 background-position: 100% 100%;
 }
+
+video{
+  position: fixed;
+
+  object-fit: cover;
+}
 .footer-logo {
 margin-bottom: 30px;
 }
@@ -120,7 +126,7 @@ margin-bottom: 30px;
 .footer-text p {
 margin-bottom: 14px;
 font-size: 14px;
-    color: #7e7e7e;
+    color:  #fff;
 line-height: 28px;
 }
 .footer-social-icon span {
@@ -178,7 +184,7 @@ margin-bottom: 12px;
 color: #ff5e14;
 }
 .footer-widget ul li a {
-color: #878787;
+color:  #fff;
 text-transform: capitalize;
 }
 .subscribe-form {
@@ -189,7 +195,7 @@ overflow: hidden;
 width: 100%;
 padding: 14px 28px;
 /* background: #2E2E2E; */
-border: 1px solid #2E2E2E;
+border: 1px solid  #fff;
 color: #fff;
 }
 .subscribe-form button {
@@ -212,7 +218,7 @@ padding: 25px 0;
 .copyright-text p {
 margin: 0;
 font-size: 14px;
-color: #878787;
+color:  #fff;
 }
 .copyright-text p a{
 color: #ff5e14;
@@ -226,6 +232,6 @@ color: #ff5e14;
 }
 .footer-menu li img {
 font-size: 14px;
-color: #878787;
+color:  #fff;
 }
 

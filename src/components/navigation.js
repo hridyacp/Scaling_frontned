@@ -2,9 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import ghoLogo from '../Assets/logobg.png';
 import user from '../Assets/profile.png';
 import { Grid } from "@mui/material";
-import Menu from "./Menu";
-import Burger from "./Burger";
-import FocusLock from 'react-focus-lock';
+import connectWal from "../Assets/connectBtnN.png";
 
 function Navigation({setAccount,setIsConnected,isConnected}) {
     const node = useRef();
@@ -67,7 +65,7 @@ const connectWallet=async()=>{
           </FocusLock>
           </div> */}
     {!isConnected?
-  <button className="text-white p-2 mt-2 mr-16 h-[40px] text-lg font-mont font-normal"  onClick={connectWallet}>Connect</button>
+  <button className="text-white p-2 mt-2 mr-16 h-[40px] text-sm font-mont font-normal flex flex-col items-center jsutify-center text-center"  onClick={connectWallet}><img width="60px" height="15px" className="ml-8" src={connectWal} alt="connect wallet" /></button>
   : <><Grid item xs={2} alignContent={"center"} justifyContent={"center"} alignItems={"center"}>
   <img width="55px" height="55px" className="mr-16 mt-2" src={user} alt="user" style={{opacity:"1"}} />
   </Grid>

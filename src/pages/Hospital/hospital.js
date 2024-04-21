@@ -30,15 +30,18 @@ function Hospital(){
         <div className="flex flex-col gap-6 justify-start">
             <span className="text-md font-normal text-left">Form Details</span>
         <div className="flex flex-col gap-4">
-           <label className="text-md font-normal text-left">Patient Data Attestation</label>
-            <input type="text" className="border-none rounded-lg h-[40px] " name="collateral"  onChange={(e)=>handleInput(e,"collateral")}/>
+           <label className="text-md font-normal text-left">Patient Name</label>
+            <input type="text" className="border-none rounded-lg h-[40px] " name="collateral"  onChange={(e)=>handleInput(e,"name")}/>
           </div>
             <div className="flex flex-col gap-4">
-            <label className="text-md font-normal text-left">Identity Verification</label>
-            <input type="text" name="tokens"  className="border-none rounded-lg h-[40px] " />
+            <label className="text-md font-normal text-left">Test Details</label>
+            <input type="text" name="tokens"  className="border-none rounded-lg h-[40px] " onChange={(e)=>handleInput(e,"test")}/>
             
             </div> 
-              
+            <div className="flex flex-col gap-4">
+           <label className="text-md font-normal text-left">Restriction</label>
+            <input type="text" className="border-none rounded-lg h-[40px] " name="collateral"  onChange={(e)=>handleInput(e,"restriction")}/>
+          </div>
             </div>
             <div className="btn-container">
             <button onClick={getSupplyAttest} className="button-create">Sign</button>

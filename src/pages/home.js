@@ -91,7 +91,7 @@ This is an open source project found on github (requires developer experience to
 <div className="flex justify-center text-white font-mont text-xl gap-10 mt-10 mb-4">
 <div class="card card0">
     <div class="border">
-      <h2>Built By: Shravan</h2>
+      <h2 className="built-bys">Built By: Shravan</h2>
       <div class="icons">
       <img className={"fa"} width={"40px"} height="40px" src={LnIcon} alt="linkdin" />
                                 <img className={"fa"} width={"40px"} height="40px" src={fbIcon} alt="FB" />

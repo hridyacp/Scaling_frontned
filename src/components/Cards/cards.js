@@ -20,17 +20,17 @@ else if(type==="counterFiet"){
   <div className="nft">
     <div className='main'>
       {/* <img className='tokenImage' src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="NFT" /> */}
-      <h2>Kibertopiks #4269</h2>
-      <p className='description'>Our Kibertopiks will give you nothing.</p>
+      <h2>For Healthcare Sector</h2>
+      <p className='description'>Track and verify the authenticity of products as they move through the supply chain.</p>
       <div className='tokenInfo'>
-        <div className="price">
+        {/* <div className="price">
           <ins>◘</ins>
           <p>0.031 ETH</p>
         </div>
         <div className="duration">
           <ins>◷</ins>
           <p>11 days left</p>
-        </div>
+        </div> */}
       </div>
       <hr />
       <div className='creator' onClick={()=>goToAtestment('hospital')}>
@@ -44,7 +44,7 @@ else if(type==="counterFiet"){
             <div className="nft">
     <div className='main'>
       {/* <img className='tokenImage' src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="NFT" /> */}
-      <h2>Kibertopiks #4269</h2>
+      <h2>For Court Hearings</h2>
       <p className='description'>Our Kibertopiks will give you nothing.</p>
       <div className='tokenInfo'>
         <div className="price">
@@ -75,7 +75,7 @@ else if(type==="counterFiet"){
     <div className="nft-right">
     <div className='main'>
       {/* <img className='tokenImage' src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="NFT" /> */}
-      <h2>Kibertopiks #4269</h2>
+      <h2>For SUpply Chain</h2>
       <p className='description'>Our Kibertopiks will give you nothing.</p>
       <div className='tokenInfo'>
         <div className="price">

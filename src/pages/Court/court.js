@@ -3,15 +3,50 @@ import Navigation from "../../components/navigation";
 import "../home.css";
 import signIn from "../../Assets/Sign.png";
 import vid from "../../Assets/video.mp4";
+import axios from "axios";
 
 function Court(){
     const [account,setAccount]=useState("");
     const [isConnected,setIsConnected]=useState(false);
-    const getSupplyAttest=()=>{
+    const [id,setId]=useState("");
+    const [hearingDate,setHearingDate]=useState("");
+    const [witness,setWitness]=useState("");
+    const [result,setResult]=useState("");
+    const ethers = require("ethers");
 
+    const getSupplyAttest=async()=>{
+      if(window.ethereum){
+      const accounts= await window.ethereum.request({ method: "eth_requestAccounts" });
+      let userAccount=accounts[0];
+      const provider = new ethers.providers.Web3Provider(window.ethereum);
+        const signer = provider.getSigner();
+      const signatureValue = await signer.signMessage(`{"caseId":${id},"hearingDate":${hearingDate},"witness":${witness},"result":${result}}`);
+      try{
+        const response = await axios.post("http://localhost:4000/create-attestation", {
+                         schemaId:"null",
+                         attestation:`{"caseId":${id},"hearingDate":${hearingDate},"witness":${witness},"result":${result}}`,
+                         signature: signatureValue,
+                         attester: userAccount
+                      })
+                      console.log(response,"axios response")  
+                    } catch{
+                      console.log("error")
+                    } 
+    }
     }
     const handleInput =(e,type)=>{
-
+if(type==="id"){
+setId(e.target.value);
+}
+else if(type==="date"){
+  setHearingDate(e.target.value);
+  }
+  else if(type==="witness"){
+    setWitness(e.target.value);
+    }
+    else if(type==="result"){
+      setResult(e.target.value);
+      }
     }
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -31,12 +66,22 @@ function Court(){
         <div className="flex flex-col gap-6 justify-start">
             <span className="text-md font-normal text-left">Form Details</span>
         <div className="flex flex-col gap-4">
-           <label className="text-md font-normal text-left">Patient Data Attestation</label>
-            <input type="text" className="border-none rounded-lg h-[40px] " name="collateral"  onChange={(e)=>handleInput(e,"collateral")}/>
+           <label className="text-md font-normal text-left">Case Id</label>
+            <input type="text" className="border-none rounded-lg h-[40px] text-black font-normal font-mont p-2" name="collateral"  onChange={(e)=>handleInput(e,"id")}/>
           </div>
             <div className="flex flex-col gap-4">
-            <label className="text-md font-normal text-left">Identity Verification</label>
-            <input type="text" name="tokens"  className="border-none rounded-lg h-[40px] " />
+            <label className="text-md font-normal text-left">Hearing Date</label>
+            <input type="text" name="tokens"  className="border-none rounded-lg h-[40px] text-black font-normal font-mont p-2" onChange={(e)=>handleInput(e,"date")} />
+            
+            </div> 
+            <div className="flex flex-col gap-4">
+            <label className="text-md font-normal text-left">Witness</label>
+            <input type="text" name="tokens"  className="border-none rounded-lg h-[40px] text-black font-normal font-mont p-2" onChange={(e)=>handleInput(e,"witness")} />
+            
+            </div>
+            <div className="flex flex-col gap-4">
+            <label className="text-md font-normal text-left">Result</label>
+            <input type="text" name="tokens"  className="border-none rounded-lg h-[40px] text-black font-normal font-mont p-2" onChange={(e)=>handleInput(e,"result")} />
             
             </div> 
               

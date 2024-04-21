@@ -18,7 +18,15 @@ const { default: Navigation } = require("../components/navigation");
 function Home(){
     const [account,setAccount]=useState("");
     const [isConnected,setIsConnected]=useState(false);
-
+    const modelWidth = {
+        width: '450px',
+        paddingBottom: "32rem",
+        display:"flex",
+        justifyContent:"flex-start",
+        '@media (min-width: 1400px)' : {
+            paddingBottom: "26rem",
+        }
+      }
     return(
 <div>
 <video autoPlay loop muted>
@@ -47,7 +55,7 @@ Where Trust Gets A  <br /> Digital Passport
 {/* <Grid item xs={6.5} style={{height:"850px",width:"450px",display:"flex",justifyContent:"flex-start"}} alignContent={"flex-start"}> */}
 <div style={{ objectFit: "contain",height: "1200px",width:"auto" ,display:"flex",justifyContent:"flex-start",flexDirection:"column"}}>
 <model-viewer
-style={{width:"inherit",width:"450px",paddingBottom:"32rem",display:"flex",justifyContent:"flex-start"}}
+style={modelWidth}
 
     src="./astronaut.glb" alt="astronaut"
     camera-orbit="45deg 55deg" touch-action="pan-y" autoplay animation-name="Running"

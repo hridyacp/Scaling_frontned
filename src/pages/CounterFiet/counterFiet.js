@@ -7,7 +7,6 @@ function CounterFiet(){
     const [account,setAccount]=useState("");
     const [isConnected,setIsConnected]=useState(false);
     const getSupplyAttest=()=>{
-
     }
     const handleInput =(e,type)=>{
 

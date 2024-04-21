@@ -21,7 +21,7 @@ else if(type==="counterFiet"){
     <div className='main'>
       {/* <img className='tokenImage' src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="NFT" /> */}
       <h2 className='font-mont'>For Healthcare Sector</h2>
-      <p className='description'>Track and verify the authenticity of products as they move through the supply chain.</p>
+      <p className='description'> Enable secure and transparent management of patient data, medical devices, clinical research, pharmaceuticals, and insurance claims.</p>
       <div className='tokenInfo'>
         {/* <div className="price">
           <ins>◘</ins>
@@ -45,17 +45,7 @@ else if(type==="counterFiet"){
     <div className='main'>
       {/* <img className='tokenImage' src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="NFT" /> */}
       <h2>For Court Hearings</h2>
-      <p className='description font-mont font-normal'>Our Kibertopiks will give you nothing.</p>
-      <div className='tokenInfo'>
-        <div className="price">
-          <ins>◘</ins>
-          <p>0.031 ETH</p>
-        </div>
-        <div className="duration">
-          <ins>◷</ins>
-          <p>11 days left</p>
-        </div>
-      </div>
+      <p className='description font-mont font-normal'>Ensures the integrity of legal documents through secure digital signatures and blockchain verification.</p>
       <hr />
       <div className='creator' onClick={()=>goToAtestment('court')}>
        
@@ -76,8 +66,8 @@ else if(type==="counterFiet"){
     <div className='main'>
       {/* <img className='tokenImage' src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="NFT" /> */}
       <h2>For Supply Chain</h2>
-      <p className='description font-mont font-normal'>Our Kibertopiks will give you nothing.</p>
-      <div className='tokenInfo'>
+      <p className='description font-mont font-normal'>Track and verify the authenticity of products as they move through the supply chain.</p>
+      {/* <div className='tokenInfo'>
         <div className="price">
           <ins>◘</ins>
           <p>0.031 ETH</p>
@@ -86,7 +76,7 @@ else if(type==="counterFiet"){
           <ins>◷</ins>
           <p>11 days left</p>
         </div>
-      </div>
+      </div> */}
       <hr />
       <div className='creator' onClick={()=>goToAtestment('counterFiet')}>
        

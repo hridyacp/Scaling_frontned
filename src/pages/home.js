@@ -74,9 +74,8 @@ style={modelWidth}
         <div className="flex flex-col gap-4 text-white font-mont font-normal p-4 text-left mt-14">
           <div>About Us <br /></div>  
           <div>
-This is an open source project found on github (requires developer experience to set up and configure). This website provides a little extra functionality to allow users to easily register and manage their own data sets.<br/> It helps fund the open source project, so thanks for signing up!
-This is an open source project found on github (requires developer experience to set up and configure).<br/> This website provides a little extra functionality to allow users to easily register and manage their own data sets. It helps fund the open source project, so thanks for signing up!
-This is an open source project found on github (requires developer experience to set up and configure).<br/>
+          Certifio Technologies revolutionizes data management in legal, healthcare, and supply chain sectors. Our Certifio solutions streamline court attestation processes by securely preserving input data. In healthcare, we enhance patient safety by centralizing and safeguarding medical records. Additionally, our technology ensures transparency and efficiency in supply chain operations. With innovation and efficiency, we drive positive change across critical sectors.<br/>
+          With our innovative Sign Protocol, we provide a seamless and tamper-proof method for digitally signing and verifying documents, ensuring their integrity throughout their lifecycle. By leveraging blockchain technology, we offer immutable records that can be accessed and verified by authorized parties, eliminating the risk of fraud or manipulation.
 </div>
 </div>
 </Grid>

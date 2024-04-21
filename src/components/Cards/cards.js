@@ -20,7 +20,7 @@ else if(type==="counterFiet"){
   <div className="nft">
     <div className='main'>
       {/* <img className='tokenImage' src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="NFT" /> */}
-      <h2>For Healthcare Sector</h2>
+      <h2 className='font-mont'>For Healthcare Sector</h2>
       <p className='description'>Track and verify the authenticity of products as they move through the supply chain.</p>
       <div className='tokenInfo'>
         {/* <div className="price">
@@ -35,7 +35,7 @@ else if(type==="counterFiet"){
       <hr />
       <div className='creator' onClick={()=>goToAtestment('hospital')}>
        
-       <p><ins>Go to</ins> Hospital Attestment</p>
+       <p className='font-mont font-normal'><ins>Go to</ins> Hospital Attestment</p>
        </div>
      
     </div>
@@ -45,7 +45,7 @@ else if(type==="counterFiet"){
     <div className='main'>
       {/* <img className='tokenImage' src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="NFT" /> */}
       <h2>For Court Hearings</h2>
-      <p className='description'>Our Kibertopiks will give you nothing.</p>
+      <p className='description font-mont font-normal'>Our Kibertopiks will give you nothing.</p>
       <div className='tokenInfo'>
         <div className="price">
           <ins>◘</ins>
@@ -59,7 +59,7 @@ else if(type==="counterFiet"){
       <hr />
       <div className='creator' onClick={()=>goToAtestment('court')}>
        
-       <p><ins>Go to</ins> Court Attestment</p>
+       <p className='font-mont font-normal'><ins>Go to</ins> Court Attestment</p>
      </div>
      
     </div>
@@ -75,8 +75,8 @@ else if(type==="counterFiet"){
     <div className="nft-right">
     <div className='main'>
       {/* <img className='tokenImage' src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="NFT" /> */}
-      <h2>For SUpply Chain</h2>
-      <p className='description'>Our Kibertopiks will give you nothing.</p>
+      <h2>For Supply Chain</h2>
+      <p className='description font-mont font-normal'>Our Kibertopiks will give you nothing.</p>
       <div className='tokenInfo'>
         <div className="price">
           <ins>◘</ins>
@@ -90,7 +90,7 @@ else if(type==="counterFiet"){
       <hr />
       <div className='creator' onClick={()=>goToAtestment('counterFiet')}>
        
-       <p><ins>Go to</ins> SupplyChain Attestment</p>
+       <p className='font-mont font-normal'><ins>Go to</ins> SupplyChain Attestment</p>
        </div>
     </div>
    

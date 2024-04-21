@@ -20,11 +20,12 @@ function Court(){
       let userAccount=accounts[0];
       const provider = new ethers.providers.Web3Provider(window.ethereum);
         const signer = provider.getSigner();
-      const signatureValue = await signer.signMessage(`{"caseId":${id},"hearingDate":${hearingDate},"witness":${witness},"result":${result}}`);
+        const data={"caseId":id,"hearingDate":hearingDate,"witness":witness,"result":result}
+      const signatureValue = await signer.signMessage(JSON.stringify(data));
       try{
         const response = await axios.post("http://localhost:4000/create-attestation", {
                          schemaId:"null",
-                         attestation:`{"caseId":${id},"hearingDate":${hearingDate},"witness":${witness},"result":${result}}`,
+                         attestation:JSON.stringify(data),
                          signature: signatureValue,
                          attester: userAccount
                       })

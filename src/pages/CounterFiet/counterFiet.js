@@ -29,11 +29,11 @@ function CounterFiet(){
         <div className="flex flex-col gap-6 justify-start">
             <span className="text-md font-normal text-left">Form Details</span>
         <div className="flex flex-col gap-4">
-           <label className="text-md font-normal text-left">Patient Data Attestation</label>
+           <label className="text-md font-normal text-left">Chain Id</label>
             <input type="text" className="border-none rounded-lg h-[40px] " name="collateral"  onChange={(e)=>handleInput(e,"collateral")}/>
           </div>
             <div className="flex flex-col gap-4">
-            <label className="text-md font-normal text-left">Identity Verification</label>
+            <label className="text-md font-normal text-left">Product Details</label>
             <input type="text" name="tokens"  className="border-none rounded-lg h-[40px] " />
             
             </div> 

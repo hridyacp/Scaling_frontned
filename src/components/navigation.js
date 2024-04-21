@@ -57,7 +57,7 @@ const connectWallet=async()=>{
    
   return (
     <div className=" p-0 flex justify-between w-[100%]">
-        <img width="150px" height="20px" className="ml-8" src={ghoLogo} alt="ghologo" />
+        <img width="180px" height="30px" className="ml-8" src={ghoLogo} alt="ghologo" />
          {/* <div ref={node}>
         <FocusLock disabled={!open}>
             <Burger open={open} setOpen={setOpen}  />

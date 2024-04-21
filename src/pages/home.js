@@ -74,7 +74,7 @@ style={modelWidth}
         <div className="flex flex-col gap-4 text-white font-mont font-normal p-4 text-left mt-14">
           <div>About Us <br /></div>  
           <div>
-          Certifio Technologies revolutionizes data management in legal, healthcare, and supply chain sectors. Our Certifio solutions streamline court attestation processes by securely preserving input data. In healthcare, we enhance patient safety by centralizing and safeguarding medical records. Additionally, our technology ensures transparency and efficiency in supply chain operations. With innovation and efficiency, we drive positive change across critical sectors.<br/>
+          RollUpAttest Technologies revolutionizes data management in legal, healthcare, and supply chain sectors. Our RollUpAttest solutions streamline court attestation processes by securely preserving input data. In healthcare, we enhance patient safety by centralizing and safeguarding medical records. Additionally, our technology ensures transparency and efficiency in supply chain operations. With innovation and efficiency, we drive positive change across critical sectors.<br/>
           With our innovative Sign Protocol, we provide a seamless and tamper-proof method for digitally signing and verifying documents, ensuring their integrity throughout their lifecycle. By leveraging blockchain technology, we offer immutable records that can be accessed and verified by authorized parties, eliminating the risk of fraud or manipulation.
 </div>
 </div>

@@ -19,73 +19,71 @@ model-viewer {
 .css-3f6ufr-MuiGrid-root>.MuiGrid-item{
 padding-top:26px !important;
 }
-figure {
-  width: 500px;
-  aspect-ratio: 8 / 5;
-  --bg: hsl(330 80% calc(90% - (var(--hover) * 10%)));
-  --accent: hsl(280 80% 40%);
-  transition: background 0.2s;
-  background:
-    radial-gradient(circle at top left, var(--accent), transparent 75%),
-    var(--bg);
-  margin: 0;
+.border {
+  height: 270px;
+  width: 295px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
   position: relative;
+}
+.border:hover {
+  border: 1px solid #fff;
+  height: 379px;
+  width: 300px;
+}
+.card {
+  height: 379px;
+  width: 300px;
+  background: #808080;
+  border-radius: 10px;
+  transition: background 0.8s;
   overflow: hidden;
-  border-radius: 1.5rem;
+  background: #000;
+  box-shadow: 0 70px 63px -60px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.card0 {
+  background: url("../Assets/builtBy.jpg") center center no-repeat;
+  background-size: 300px;
+}
+.card0:hover {
+  background: url("../Assets/builtBy.jpg") left center no-repeat;
+  background-size: 600px;
+}
+.card0:hover h2 {
+  opacity: 1;
+}
+.card0:hover .fa {
+  opacity: 1;
 }
 
-figure:after {
-  content: "";
-  position: absolute;
-  width: 20%;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  bottom: 0%;
-  left: 10%;
-  background: linear-gradient(-65deg, var(--bg) 50%, var(--accent) 50%);
-  filter: blur(25px);
-  transform:
-    translateX(calc(var(--hover) * 15%))
-    scale(calc(1 + (var(--hover) * 0.2)));
-  transition: transform 0.2s, background 0.2s;
-}
-
-.built-by {
-  position: absolute;
-  left: 20%;
-  top: 15%;
-  width: 50%;
-  transform:
-    translateX(calc(var(--hover) * -15%))
-    scale(calc(1 + (var(--hover) * 0.2)));
-  transition: transform 0.2s;
-}
-
-article {
-  --hover: 0;
-}
-
-article:hover {
-  --hover: 1;
-}
 h2 {
-  position:absolute;
-  left: 20%;
-  top: 15%;
-  width: 50%;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #fff;
   margin: 20px;
   opacity: 0;
   transition: opacity 1s;
-  transform:
-    translateX(calc(var(--hover) * -15%))
-    scale(calc(1 + (var(--hover) * 0.2)));
 }
-.figure::after h2 {
-  opacity: 1;
+.fa {
+  opacity: 0;
+  transition: opacity 1s;
 }
-
+.icons {
+  position: absolute;
+  fill: #fff;
+  color: #fff;
+  height: 130px;
+  top: 226px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
 ul {
   margin: 0px;
   padding: 0px;
